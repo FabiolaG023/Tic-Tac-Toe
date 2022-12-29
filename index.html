@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="wrapper">
+    </div>
+    <div class="popup hide">
+        <p id="message">Message</p>
+        <button type="button" id="new-game">New</button>
+    </div>
+        <div class="box-form">
+            <div class="left">
+                <div class="overlay">
+                <div class="container-game">
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                 </div>
+                <button class="btn" id="restart">Restart</button>
+                </div>
+            </div>
+                <div class="right">
+                    <h5>Tic Tac Toe</h5>
+                    <h3>Game history</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nickname</th>
+                        <th scope="col">Results</th>
+                      </tr>
+                    </thead>
+                    <tbody id="wins">
+                    </tbody>
+                  </table>
+                  <div class="nes-container">
+                    <form id="form">
+                        <div class="inputs">
+                            <br>
+                            <h3>Nicknames</h3>
+                            <input type="text" id="player1" placeholder="Player 1 is X">
+                            <br>
+                            <input type="text" id="player2" placeholder="Player 2 is O">
+                        </div>
+                            <input type="button"  class="btn" onclick="recibir()" value="GO!">
+                        </form>
+                  </div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
